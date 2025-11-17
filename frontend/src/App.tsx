@@ -5,6 +5,7 @@ import StoryCard from './components/StoryCard.js';
 import GameCard from './components/GameCard.js';
 import NavbarLink from './components/NavbarLink.tsx';
 import { useRef, useState } from 'react';
+import clsx from 'clsx';
 
 function App() {
   const [email, setEmail] = useState("");
@@ -109,7 +110,10 @@ function App() {
 
               <div className="flex flex-col md:flex-row items-center gap-2">
                 <div 
-                  className="bg-[#f9e2ca] border-4 border-[#d5a16c] rounded-[20px] px-4 md:px-8 py-4 flex items-center gap-3 md:gap-6 w-full transform rotate-[-1.2deg] shadow-[0_8px_20px_rgba(0,0,0,0.25)]"
+                  className={clsx(
+                    "bg-[#f9e2ca] border-4 border-[#d5a16c] rounded-[20px] px-4 md:px-8 py-4 flex items-center gap-3 md:gap-6 w-full transform rotate-[-1.2deg] shadow-[0_8px_20px_rgba(0,0,0,0.25)]",
+                    "transition-transform hover:scale-105"
+                  )}
                 >
                   <img src="/icons/email.svg" alt="" className="w-6 h-5 flex-shrink-0 select-none" />
                   <input
@@ -164,7 +168,7 @@ function App() {
                 />
               </div>
 
-              <div className="relative transform rotate-[1.7deg]">
+              <div className="relative transform rotate-[1.7deg] transition-transform hover:scale-105">
                 <iframe 
                   width="442" 
                   height="249" 
