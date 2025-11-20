@@ -324,22 +324,25 @@ function App() {
             <StoryCard 
               imageSrc="/stories/ascpixi.png"
               imageAlt=""
-              title="Counterspell"
-              description="Game jam in 50 cities including Toronto, Boston, & Singapore"
+              titleImageSrc="/branding/logo-counterspell.png"
+              titleImageAlt="Counterspell logo"
+              description="Our first worldwide game jam! In 50 cities including Toronto, Boston, & Singapore"
             />
 
             <StoryCard 
               imageSrc="/stories/manitej.png"
               imageAlt=""
-              title="Scrapyard"
-              description="In-person hackathon in 70 cities worldwide"
+              titleImageSrc="/branding/logo-scrapyard.svg"
+              titleImageAlt="Scrapyard logo"
+              description="Build stupid stuff, get stupid prizes! In-person hackathon in 70+ cities."
             />
 
             <StoryCard 
               imageSrc="/stories/sebastian.png"
               imageAlt=""
-              title="Daydream"
-              description="Game jam in 100 cities worldwide"
+              titleImageSrc="/branding/logo-daydream.png"
+              titleImageAlt="Daydream logo"
+              description="Game jam in 100 cities worldwide -- from London to NYC to Penang!"
             />
           </div>
         </div>
