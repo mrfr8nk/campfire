@@ -36,7 +36,7 @@ function App() {
           <nav className="flex gap-4 text-3xl lg:gap-12 items-center text-white lg:text-5xl font-bold font-amatic">
             <NavbarLink onClick={() => scrollToSection('steps')}>How to organize</NavbarLink>
             {/* <NavbarLink onClick={() => scrollToSection('map')}>Map</NavbarLink> */}
-            <NavbarLink onClick={() => scrollToSection('letter')}>Letter</NavbarLink>
+            {/* <NavbarLink onClick={() => scrollToSection('letter')}>Letter</NavbarLink> */}
             <NavbarLink onClick={() => scrollToSection('previous-events')}>Previous events</NavbarLink>
             <NavbarLink onClick={() => scrollToSection('faq')}>FAQ</NavbarLink>
           </nav>
