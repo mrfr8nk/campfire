@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
-      <div className="absolute top-0 left-0 w-1/3 z-40 pointer-events-none hidden lg:block">
+      <div className="absolute top-0 left-0 w-1/3 md:z-40 pointer-events-none">
         <img 
           src="/backgrounds/corner-cloud.png" 
           alt=""
@@ -39,8 +39,8 @@ function App() {
       </div>
 
       <div className="w-full h-screen">
-        <header className="relative h-[80px] lg:h-[115px] bg-[#45b4f5] flex justify-end items-center content-center lg:pr-16">
-          <nav className="flex gap-4 text-3xl lg:gap-12 items-center text-white lg:text-5xl font-bold font-ember-and-fire">
+        <header className="relative h-[60px] md:h-[115px] bg-[#45b4f5] flex justify-end items-center content-center md:pr-16">
+          <nav className="flex gap-4 w-full justify-between px-8 md:px-0 text-2xl md:gap-12 items-center md:justify-end text-white md:text-5xl font-bold font-ember-and-fire">
             <NavbarLink onClick={() => scrollToSection('steps')}>How to organize</NavbarLink>
             {/* <NavbarLink onClick={() => scrollToSection('map')}>Map</NavbarLink> */}
             {/* <NavbarLink onClick={() => scrollToSection('letter')}>Letter</NavbarLink> */}
@@ -49,29 +49,29 @@ function App() {
           </nav>
         </header>
 
-        <section className="relative h-full flex items-end pb-32 2xl:pb-48 px-6 md:px-16 lg:px-24 2xl:px-32 bg-[url(/backgrounds/blue-sky.png)] bg-center bg-cover">
+        <section className="relative h-full flex items-end pb-32 2xl:pb-48 px-6 md:px-16 md:px-24 2xl:px-32 bg-[url(/backgrounds/blue-sky.png)] bg-center bg-cover">
           <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
             <img src="/backgrounds/sky-shine.png" alt="" className="w-full h-full object-cover select-none" />
           </div>
 
           <div
-            className="absolute bottom-[32px] right-[140px] w-full h-full pointer-events-none"
+            className="absolute bottom-[32px] right-[40px] md:right-[140px] w-full h-full pointer-events-none"
             style={{
               transform: `translateY(${-scrollY / 12}px)`
             }}
           >
             {/* fishy on the right. His name is frederick. */}
-            <div className="absolute top-[64px] right-[140px] w-1/6">
+            <div className="absolute top-[128px] md:top-[64px] right-[-50px] md:right-[140px] w-1/3 md:w-1/6">
               <img src="/characters/fish-2.png" alt="Fish named Frederick" className="w-full h-full object-cover select-none" />
             </div>
 
             {/* fishy on the left. His name is gubson */}
-            <div className="absolute top-[32px] right-[300px] w-1/6">
+            <div className="absolute top-[96px] md:top-[32px] right-[-10px] md:right-[300px] w-1/3 md:w-1/6">
               <img src="/characters/fish-1.png" alt="Fish named Gubson" className="w-full h-full object-cover select-none" />
             </div>
           </div>
 
-          <div className="absolute bottom-0 lg:bottom-[160px] flex items-end lg:block left-0 w-full h-full lg:animate-cloud-float-right pointer-events-none">
+          <div className="absolute bottom-0 md:bottom-[160px] flex items-end md:block left-0 w-full h-full md:animate-cloud-float-right pointer-events-none">
             <img
               src="/backgrounds/bottom-cloud.png"
               alt=""
@@ -90,8 +90,8 @@ function App() {
             />
           </div>
 
-          <div className="flex flex-col lg:flex-row justify-between items-center w-full gap-8 pb-24 z-10 h-full pt-16 lg:pt-0 lg:h-auto">
-            <div className="flex flex-col gap-4 w-full lg:w-[648px]">
+          <div className="flex flex-col md:flex-row justify-between items-center w-full gap-8 pb-24 z-10 h-full pt-16 md:pt-0 md:h-auto">
+            <div className="flex flex-col gap-4 w-full md:w-[648px]">
               <div className="mb-6">
                 <div className="flex items-center gap-2 mb-4">
                   <img 
@@ -101,9 +101,9 @@ function App() {
                   />
                 </div>
                 
-                <div className="transform rotate-[-2.97deg]">
+                <div className="transform md:rotate-[-2.97deg]">
                   <h1 
-                    className="text-[#fcf5ed] text-[80px] md:text-[120px] lg:text-[150px] font-normal leading-none mb-4 font-dream-planner"
+                    className="text-[#fcf5ed] text-[80px] md:text-[120px] md:text-[150px] font-normal leading-none mb-4 font-dream-planner"
                     style={{ 
                       textShadow: "5px 8px 0px rgba(0,0,0,0.25)"
                     }}
@@ -112,7 +112,7 @@ function App() {
                   </h1>
                 </div>
 
-                <div className="pl-4">
+                <div className="pl-2 md:pl-4">
                   <p 
                     className="text-white text-4xl font-bold mb-2 font-ember-and-fire"
                     style={{ 
@@ -132,10 +132,10 @@ function App() {
                 </div>
               </div>
 
-              <div className="flex flex-col md:flex-row items-center gap-6 lg:gap-2">
+              <div className="flex flex-col md:flex-row items-center gap-2">
                 <div 
                   className={clsx(
-                    "bg-[#f9e2ca] border-4 border-[#d5a16c] rounded-[20px] px-4 md:px-8 py-4 flex items-center gap-3 md:gap-6 w-full transform rotate-[-1.2deg] shadow-[0_8px_20px_rgba(0,0,0,0.25)]",
+                    "bg-[#f9e2ca] border-4 border-[#d5a16c] rounded-[20px] px-4 md:px-8 py-4 flex items-center gap-3 md:gap-6 w-full transform md:rotate-[-1.2deg] shadow-[0_8px_20px_rgba(0,0,0,0.25)]",
                     "transition-transform hover:scale-105"
                   )}
                 >
@@ -153,7 +153,7 @@ function App() {
                 </div>
                 
                 <button 
-                  className="bg-[#fca147] border-[5px] border-[rgba(0,0,0,0.2)] rounded-[20px] px-8 md:px-14 py-4 hover:scale-105 transition-transform w-full md:w-auto transform rotate-[1.5deg] shadow-[0_8px_20px_rgba(0,0,0,0.25)] cursor-pointer active:scale-95"
+                  className="bg-[#fca147] border-[5px] border-[rgba(0,0,0,0.2)] rounded-[20px] px-8 md:px-14 py-4 hover:scale-105 transition-transform w-full md:w-auto transform md:rotate-[1.5deg] shadow-[0_8px_20px_rgba(0,0,0,0.25)] cursor-pointer active:scale-95"
                   type="button"
                   onClick={() => {
                     if (!emailRef?.current?.reportValidity() || !email)
@@ -174,8 +174,8 @@ function App() {
               </div>
             </div>
 
-            <div className="relative w-full lg:w-auto">
-              <div className="flex items-center justify-center gap-3 mb-4 2xl:mb-8">
+            <div className="relative w-full md:w-auto">
+              <div className="flex items-center justify-center gap-3 mb-4 2xl:mb-8 pt-6 md:pt-0">
                 <p 
                   className="text-white text-4xl 2xl:text-6xl md:text-4xl font-bold font-ember-and-fire"
                   style={{ 
@@ -202,7 +202,7 @@ function App() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  className="h-[180px] lg:h-[250px] w-auto lg:w-full lg:max-w-[442px] aspect-video rounded-2xl shadow-[12px_12px_0px_0px_rgba(0,0,0,0.25)] mx-auto"
+                  className="h-[180px] md:h-[250px] w-auto md:w-full md:max-w-[442px] aspect-video rounded-2xl shadow-[12px_12px_0px_0px_rgba(0,0,0,0.25)] mx-auto"
                 />
               </div>
             </div>
@@ -243,26 +243,26 @@ function App() {
           />
         </div>
         
-        <div className="absolute top-[0px] z-45 right-0 w-[150px] lg:w-[352px] pointer-events-none">
+        <div className="absolute top-[0px] z-45 right-0 w-[150px] md:w-[352px] pointer-events-none">
           <img
             src="/decorative/cogs-top-right.png" alt=""
             className="w-full h-full object-contain select-none"
           />
         </div>
 
-        <div className="absolute invisible lg:visible top-[55%] z-45 left-0 w-[260px] pointer-events-none">
+        <div className="absolute invisible md:visible top-[55%] z-45 left-0 w-[260px] pointer-events-none">
           <img src="/decorative/cogs-mid-left.png" alt="" className="w-full h-full object-contain select-none" />
         </div>
         
-        <div className="absolute invisible lg:visible top-[75%] z-45 right-0 translate-x-20 w-[280px] pointer-events-none">
+        <div className="absolute invisible md:visible top-[75%] z-45 right-0 translate-x-20 w-[280px] pointer-events-none">
           <img src="/decorative/single-cog-1.png" alt="" className="w-full h-full object-contain select-none" />
         </div>
 
-        <div className="absolute invisible lg:visible top-[82%] z-45 left-0 translate-x-10 w-[280px] pointer-events-none">
+        <div className="absolute invisible md:visible top-[82%] z-45 left-0 translate-x-10 w-[280px] pointer-events-none">
           <img src="/decorative/single-cog-2.png" alt="" className="w-full h-full object-contain select-none" />
         </div>
 
-        <div id="steps" className="relative z-40 flex flex-col gap-24 items-center px-12 max-w-7xl mx-auto pt-12 lg:pt-0">
+        <div id="steps" className="relative z-40 flex flex-col gap-24 items-center px-12 max-w-7xl mx-auto pt-12 md:pt-0">
           <Step 
             stepNumber={1}
             imageSrc="/ui/step-signup.jpeg"
@@ -299,16 +299,16 @@ function App() {
         </div>
       </section>
 
-      <section className="relative h-full lg:h-[800px] pb-8 px-8 z-30 -mt-96">
+      <section className="relative h-full md:h-[800px] pb-8 px-8 z-30 -mt-96">
         <div className="absolute top-0 left-0 w-full h-full from-transparent to-[#022994] bg-gradient-to-b pointer-events-none">
           <img src="/decorative/clouds-3.png" alt="" className="w-full h-full object-cover select-none" />
         </div>
 
-        <div id="letter" className="relative w-full h-full z-50 translate-y-20 lg:translate-y-64 flex justify-center">
-          <img src='/backgrounds/world-map-left.png' alt='' className='h-full hidden lg:block' />
-          <div className='flex items-center lg:block lg:relative'>
-            <img src='/backgrounds/world-map-right.png' alt='' className='h-full hidden lg:block' />
-            <div className='lg:absolute lg:top-0 lg:left-0 pt-16 pb-16 lg:pb-0 rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.25)] lg:rounded-none lg:shadow-none lg:pt-30 pl-6 lg:pl-12 pr-6 lg:pr-64 text-xl bg-[#EAD6BE] border-[#DCA87E] border-4 lg:border-0 lg:bg-transparent lg:text-2xl flex flex-col gap-6 font-solway'>
+        <div id="letter" className="relative w-full h-full z-50 translate-y-20 md:translate-y-64 flex justify-center">
+          <img src='/backgrounds/world-map-left.png' alt='' className='h-full hidden md:block' />
+          <div className='flex items-center md:block md:relative'>
+            <img src='/backgrounds/world-map-right.png' alt='' className='h-full hidden md:block' />
+            <div className='md:absolute md:top-0 md:left-0 py-12 md:py-16 md:pb-0 rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.25)] md:rounded-none md:shadow-none md:pt-30 pl-6 md:pl-12 pr-6 md:pr-64 text-xl bg-[#EAD6BE] border-[#DCA87E] border-4 md:border-0 md:bg-transparent md:text-2xl flex flex-col gap-6 font-solway'>
               <h1>Dear Hackers, Musicians, and Artists,</h1>
               <p>
                 Welcome to Hack Club's newest adventure. This winter we invite you to join us for Campfire, the world's biggest Game Jam happening simultaneously in 100 cities.
@@ -333,8 +333,8 @@ function App() {
         </div>
       </section>
 
-      <section className="relative py-24 bg-[#384fbc] bg-cover bg-center z-20 pt-90 lg:pt-130 pb-60 bg-[url(/backgrounds/blue-gradient.png)]">
-        <div className="absolute bottom-0 left-0 w-full pointer-events-none">
+      <section className="relative py-24 bg-[#384fbc] bg-cover bg-center z-20 pt-90 md:pt-130 pb-60 bg-[url(/backgrounds/blue-gradient.png)]">
+        <div className="absolute bottom-48 md:bottom-0 left-0 w-full pointer-events-none scale-250 md:scale-100">
           <img
             src="/decorative/clouds-1.png"
             alt=""
@@ -342,7 +342,7 @@ function App() {
           />
         </div>
 
-        <div className="absolute bottom-0 left-0 w-[80vw] pointer-events-none">
+        <div className="absolute bottom-48 left-32 md:bottom-0 md:left-0 w-[80vw] pointer-events-none scale-250 md:scale-100">
           <img 
             src="/decorative/moon-composite.png" 
             alt="" 
@@ -350,7 +350,7 @@ function App() {
           />
         </div>
 
-        <div className="absolute bottom-[64px] translate-y-full scale-105 left-0 w-full pointer-events-none">
+        <div className="absolute bottom-[-160px] md:bottom-[64px] translate-y-full scale-300 md:scale-105 left-0 w-full pointer-events-none">
           <img
             src="/decorative/puzzle-composite.png"
             alt=""
@@ -358,7 +358,7 @@ function App() {
           />
         </div>
 
-        <div className="relative z-10 flex flex-col gap-12 items-center lg:px-24 w-full lg:w-auto lg:max-w-7xl mx-auto -translate-y-56">
+        <div className="relative z-10 flex flex-col gap-12 items-center md:px-24 w-full md:w-auto md:max-w-7xl mx-auto -translate-y-56">
           <h2
             id="previous-events"
             className="text-[#d7cfeb] text-6xl font-bold text-center mb-8 font-ember-and-fire"
@@ -369,7 +369,7 @@ function App() {
             Stories from past events
           </h2>
           
-          <div className="flex flex-col lg:flex-row gap-12 justify-between w-full items-center">
+          <div className="flex flex-col md:flex-row gap-12 justify-between w-full items-center">
             <StoryCard 
               imageSrc="/stories/counterspell.jpg"
               imageAlt=""
@@ -378,7 +378,7 @@ function App() {
               description="Our first worldwide game jam! In 50 cities including Toronto, Boston, & Singapore"
               videoButtonText='Watch the video'
               videoUrl="https://www.youtube.com/watch?v=H5RPsCMl3uM"
-              btnColorPair={["#FF4186", "#41DDFF"]}
+              videoButtonColor="#FF4186"
             />
 
             <StoryCard 
@@ -389,7 +389,7 @@ function App() {
               description="Build stupid stuff, get stupid prizes! In-person hackathon in 70+ cities."
               videoButtonText='Check out vid!'
               videoUrl="https://www.youtube.com/watch?v=8iM1W8kXrQA"
-              btnColorPair={["#AF8D67", "#956F43"]}
+              videoButtonColor="#AF8D67"
             />
 
             <StoryCard 
@@ -400,13 +400,13 @@ function App() {
               description="Game jam in 100 cities worldwide -- from London to NYC to Penang!"
               videoButtonText='Video here!'
               videoUrl="https://www.youtube.com/watch?v=vvdoW2gh9YU"
-              btnColorPair={["#3F709A", "#FFFDCB"]}
+              videoButtonColor="#3F709A"
             />
           </div>
         </div>
       </section>
 
-      <section className="bg-[#384fbc] pt-[25vw] z-10">
+      <section className="bg-[#384fbc] pt-[40vw] md:pt-[25vw] z-10">
         <div className="flex flex-col gap-8 items-center px-8 max-w-7xl mx-auto">
           <h2 
             className="text-[#f1ebff] text-6xl font-bold text-center mb-8 font-ember-and-fire"
@@ -417,7 +417,7 @@ function App() {
             Favorite games from past events
           </h2>
           
-          <div className="flex flex-col lg:flex-row gap-16 lg:gap-5 w-full justify-between">
+          <div className="flex flex-col md:flex-row gap-16 md:gap-5 w-full justify-between">
             <GameCard 
               imageSrc="/games/office-click-clack.png"
               imageAlt="Office Click Clack"
@@ -444,7 +444,7 @@ function App() {
           </div>
         </div>
 
-        <div className="scale-105 left-0 w-full pointer-events-none">
+        <div className="scale-250 translate-y-64 pb-48 md:pb-0 md:translate-y-0 md:scale-105 left-0 w-full pointer-events-none">
           <img
             src="/decorative/puzzle-cloud-bottom.png"
             alt=""
@@ -453,8 +453,8 @@ function App() {
         </div>
       </section>
 
-      <section className="relative pb-64 bg-[#081F8B]">
-        <div className="absolute w-full h-full z-10 pointer-events-none">
+      <section className="relative pb-64 bg-[#384FBC] md:bg-[#081F8B]">
+        <div className="absolute w-full h-full z-10 pointer-events-none invisible md:visible">
           <img 
             src="/decorative/speech-bubble-bg.png" 
             alt=""
@@ -462,7 +462,7 @@ function App() {
           />
         </div>
 
-        <div className="relative z-10 lg:px-32">
+        <div className="relative z-10 md:px-32">
           <h2
             id="faq"
             className="text-[#d7cfeb] text-[128px] font-bold text-center mb-16 font-ember-and-fire"
@@ -473,15 +473,15 @@ function App() {
             FAQ
           </h2>
 
-          <div className="flex flex-col lg:flex-row gap-10 justify-center items-start">
-            <div className="relative">
-              <div className="absolute inset-0 lg:w-[608px] pointer-events-none flex flex-col min-h-[105%]">
+          <div className="flex flex-col md:flex-row gap-32 md:gap-10 justify-center items-center md:items-start">
+            <div className="relative w-full md:w-auto">
+              <div className="absolute inset-0 md:w-[608px] pointer-events-none flex flex-col min-h-[105%]">
                 <img src="/ui/woodboard-1-top.svg" alt="" className="w-full flex-shrink-0 select-none" />
                 <div className="bg-[#AD684F] flex-1 w-full py-4"></div>
                 <img src="/ui/woodboard-1-bottom.svg" alt="" className="w-full flex-shrink-0 select-none" />
               </div>
               
-              <div className="relative z-10 flex flex-col gap-10 items-center lg:px-16 pt-8 w-[90%] lg:w-[608px]">
+              <div className="relative z-10 flex flex-col gap-10 items-center md:px-16 pt-8 w-[100%] md:w-[608px]">
                 <p 
                   className="text-[#d7cfeb] text-6xl font-bold text-center mb-4 font-ember-and-fire"
                   style={{ 
@@ -510,14 +510,14 @@ function App() {
               </div>
             </div>
 
-            <div className="relative w-full lg:w-auto">
-              <div className="absolute inset-0 lg:w-[608px] pointer-events-none flex flex-col min-h-[105%]">
+            <div className="relative w-full md:w-auto">
+              <div className="absolute inset-0 md:w-[608px] pointer-events-none flex flex-col min-h-[105%]">
                 <img src="/ui/woodboard-2-top.svg" alt="" className="w-full flex-shrink-0 select-none" />
                 <div className="bg-[#AD684F] flex-1 w-full"></div>
                 <img src="/ui/woodboard-2-bottom.svg" alt="" className="w-full flex-shrink-0 select-none" />
               </div>
               
-              <div className="relative z-10 flex flex-col gap-10 items-center px-16 pt-9 w-full lg:w-[608px]">
+              <div className="relative z-10 flex flex-col gap-10 items-center px-4 md:px-16 pt-9 w-full md:w-[608px]">
                 <p 
                   className="text-[#d7cfeb] text-6xl font-bold text-center mb-4 font-ember-and-fire"
                   style={{ 
@@ -556,9 +556,9 @@ function App() {
           className="w-full select-none"
         />
 
-        <div className="relative w-full h-[190px] bg-[#0f371d] -mt-3 flex flex-col items-center justify-center gap-6 z-10">
+        <div className="relative w-full px-4 pb-32 md:pb-0 md:px-0 md:h-[190px] bg-[#0f371d] -mt-3 flex flex-col items-center justify-center gap-16 md:gap-6 z-10">
           <p 
-            className="text-white text-4xl lg:text-5xl text-center font-bold font-ember-and-fire"
+            className="text-white text-4xl md:text-5xl text-center font-bold font-ember-and-fire"
             style={{ 
               textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
             }}
@@ -566,13 +566,13 @@ function App() {
             made with ♥ by Hack Club teens
           </p>
 
-          <div className="flex items-center gap-4 text-white text-2xl lg:text-3xl font-ember-and-fire font-bold z-20">
+          <div className="flex flex-col md:flex-row items-center gap-4 text-white text-4xl md:text-3xl font-ember-and-fire font-bold z-20">
             <a href="https://hackclub.com/" target="_blank" className="hover:underline">Hack Club</a>
-            <span>•</span>
+            <span className='hidden md:inline-block'>•</span>
             <a href="https://hackclub.com/slack" target="_blank" className="hover:underline">Slack</a>
-            <span>•</span>
+            <span className='hidden md:inline-block'>•</span>
             <a href="https://hackclub.com/clubs" target="_blank" className="hover:underline">Clubs</a>
-            <span>•</span>
+            <span className='hidden md:inline-block'>•</span>
             <a href="https://hackclub.com/hackathons" target="_blank" className="hover:underline">Hackathons</a>
           </div>
         </div>
