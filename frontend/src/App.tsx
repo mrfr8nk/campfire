@@ -322,7 +322,7 @@ function App() {
           
           <div className="flex flex-col lg:flex-row gap-12 justify-between w-full items-center">
             <StoryCard 
-              imageSrc="/stories/ascpixi.png"
+              imageSrc="/stories/counterspell.jpg"
               imageAlt=""
               titleImageSrc="/branding/logo-counterspell.png"
               titleImageAlt="Counterspell logo"
@@ -330,7 +330,7 @@ function App() {
             />
 
             <StoryCard 
-              imageSrc="/stories/manitej.png"
+              imageSrc="/stories/scrapyard.png"
               imageAlt=""
               titleImageSrc="/branding/logo-scrapyard.svg"
               titleImageAlt="Scrapyard logo"
@@ -338,7 +338,7 @@ function App() {
             />
 
             <StoryCard 
-              imageSrc="/stories/sebastian.png"
+              imageSrc="/stories/daydream.jpg"
               imageAlt=""
               titleImageSrc="/branding/logo-daydream.png"
               titleImageAlt="Daydream logo"
