@@ -213,8 +213,20 @@ function App() {
           />
         </div>
         
-        <div className="absolute top-[500px] right-32 w-[352px] h-[354px] pointer-events-none">
-          <img src="/decorative/cog.png" alt="" className="w-full h-full object-cover rounded-full select-none" />
+        <div className="absolute top-[0px] z-15 right-0 w-[352px] pointer-events-none">
+          <img src="/decorative/cogs-top-right.png" alt="" className="w-full h-full object-contain select-none" />
+        </div>
+
+        <div className="absolute top-[55%] z-15 left-0 w-[260px] pointer-events-none">
+          <img src="/decorative/cogs-mid-left.png" alt="" className="w-full h-full object-contain select-none" />
+        </div>
+        
+        <div className="absolute top-[75%] z-15 right-0 translate-x-20 w-[280px] pointer-events-none">
+          <img src="/decorative/single-cog-1.png" alt="" className="w-full h-full object-contain select-none" />
+        </div>
+
+        <div className="absolute top-[82%] z-15 left-0 translate-x-10 w-[280px] pointer-events-none">
+          <img src="/decorative/single-cog-2.png" alt="" className="w-full h-full object-contain select-none" />
         </div>
 
         <div id="steps" className="relative z-10 flex flex-col gap-24 items-center px-12 max-w-7xl mx-auto">
