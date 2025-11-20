@@ -18,12 +18,13 @@ function Step({ stepNumber, imageSrc, imageAlt, isReversed = false, children }: 
         </div>
         
         <p 
-          className="text-4xl font-bold mb-2 font-amatic relative z-10"
+          className="text-3xl font-bold mb-2 font-source-serif-pro relative z-10"
         >
-          step {stepNumber}
+          Step {stepNumber}
         </p>
+
         <p 
-          className={`text-6xl font-bold leading-tight font-amatic relative z-10`}
+          className={`text-4xl leading-tight font-source-serif-pro relative z-10 max-w-3/4`}
         >
           {children}
         </p>

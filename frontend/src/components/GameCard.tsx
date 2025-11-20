@@ -22,7 +22,7 @@ function GameCard({ imageSrc, imageAlt, title, author, href }: GameCardProps) {
       </a>
       <div className="text-center text-[#d7cfeb]">
         <p 
-          className="text-7xl font-bold mb-2 font-amatic"
+          className="text-6xl font-bold mb-2 font-ember-and-fire"
           style={{ 
             textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
           }}
@@ -30,7 +30,7 @@ function GameCard({ imageSrc, imageAlt, title, author, href }: GameCardProps) {
           {title}
         </p>
         <p 
-          className="text-4xl font-bold font-amatic"
+          className="text-3xl font-bold font-ember-and-fire"
           style={{ 
             textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
           }}

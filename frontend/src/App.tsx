@@ -40,7 +40,7 @@ function App() {
 
       <div className="w-full h-screen">
         <header className="relative h-[80px] lg:h-[115px] bg-[#45b4f5] flex justify-end items-center content-center lg:pr-16">
-          <nav className="flex gap-4 text-3xl lg:gap-12 items-center text-white lg:text-5xl font-bold font-amatic">
+          <nav className="flex gap-4 text-3xl lg:gap-12 items-center text-white lg:text-5xl font-bold font-ember-and-fire">
             <NavbarLink onClick={() => scrollToSection('steps')}>How to organize</NavbarLink>
             {/* <NavbarLink onClick={() => scrollToSection('map')}>Map</NavbarLink> */}
             {/* <NavbarLink onClick={() => scrollToSection('letter')}>Letter</NavbarLink> */}
@@ -114,7 +114,7 @@ function App() {
 
                 <div className="pl-4">
                   <p 
-                    className="text-white text-4xl font-bold mb-2 font-amatic"
+                    className="text-white text-4xl font-bold mb-2 font-ember-and-fire"
                     style={{ 
                       textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
                     }}
@@ -122,12 +122,12 @@ function App() {
                     Game jam for high schoolers in 200+ cities
                   </p>
                   <p 
-                    className="text-white text-4xl font-bold font-amatic"
+                    className="text-white text-4xl font-bold font-ember-and-fire"
                     style={{ 
                       textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
                     }}
                   >
-                    FEB 7-8, 2026
+                    Feb 7-8, 2026
                   </p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ function App() {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                     type="email"
-                    className="text-[#854d16] text-2xl md:text-4xl font-bold truncate bg-transparent border-none outline-none flex-1 cursor-text font-amatic"
+                    className="text-[#854d16] text-2xl md:text-4xl font-bold truncate bg-transparent border-none outline-none flex-1 cursor-text font-ember-and-fire"
                     placeholder="you@hackclub.com"
                     defaultValue="you@hackclub.com"
                   />
@@ -177,7 +177,7 @@ function App() {
             <div className="relative w-full lg:w-auto">
               <div className="flex items-center justify-center gap-3 mb-4 2xl:mb-8">
                 <p 
-                  className="text-white text-4xl 2xl:text-6xl md:text-4xl font-bold font-amatic"
+                  className="text-white text-4xl 2xl:text-6xl md:text-4xl font-bold font-ember-and-fire"
                   style={{ 
                     textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
                   }}
@@ -268,7 +268,7 @@ function App() {
             imageSrc="/ui/step-signup.jpeg"
             imageAlt="Step 1"
           >
-            Sign up for a <span className="text-[#F77034]">Campfire</span><br /> near you
+            Sign up for a <span className="font-bold text-[#F77034]">Campfire</span><br /> near you
           </Step>
 
           <Step 
@@ -277,7 +277,7 @@ function App() {
             imageAlt="Step 2"
             isReversed={true}
           >
-            Grab <span className="text-[#F77034]">friends</span> (or make new friends!) and form a <span className="text-[#F77034]">team of 2-3</span>
+            Grab <span className="font-bold text-[#F77034]">friends</span> (or make new friends!) and form a <span className="text-[#F77034] font-bold">team of 2-3</span>
           </Step>
 
           <Step 
@@ -285,7 +285,7 @@ function App() {
             imageSrc="/ui/step-workshops.jpeg"
             imageAlt="Step 3"
           >
-            Learn from <span className="text-[#F77034]">workshops</span>, enjoy free food and merch!
+            Learn from <span className="text-[#F77034] font-bold">workshops</span>, enjoy free food and merch!
           </Step>
 
           <Step 
@@ -294,7 +294,7 @@ function App() {
             imageAlt="Step 4"
             isReversed={true}
           >
-            <span className="text-[#F77034]">Build</span> your game & <span className="text-[#F77034]">publish</span> it online!
+            <span className="text-[#F77034] font-bold">Build</span> your game & <span className="text-[#F77034] font-bold">publish</span> it online!
           </Step>
         </div>
       </section>
@@ -361,7 +361,7 @@ function App() {
         <div className="relative z-10 flex flex-col gap-12 items-center lg:px-24 w-full lg:w-auto lg:max-w-7xl mx-auto -translate-y-56">
           <h2
             id="previous-events"
-            className="text-[#d7cfeb] text-6xl font-bold text-center mb-8 font-amatic"
+            className="text-[#d7cfeb] text-6xl font-bold text-center mb-8 font-ember-and-fire"
             style={{ 
               textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
             }}
@@ -409,7 +409,7 @@ function App() {
       <section className="bg-[#384fbc] pt-[25vw] z-10">
         <div className="flex flex-col gap-8 items-center px-8 max-w-7xl mx-auto">
           <h2 
-            className="text-[#f1ebff] text-6xl font-bold text-center mb-8 font-amatic"
+            className="text-[#f1ebff] text-6xl font-bold text-center mb-8 font-ember-and-fire"
             style={{ 
               textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
             }}
@@ -422,7 +422,7 @@ function App() {
               imageSrc="/games/office-click-clack.png"
               imageAlt="Office Click Clack"
               title="Office Click Clack"
-              author="bunnyguy - Daydream dfw"
+              author="bunnyguy - Daydream DFW"
               href="https://theavgeekbee.itch.io/office-click-clack"
             />
 
@@ -465,7 +465,7 @@ function App() {
         <div className="relative z-10 lg:px-32">
           <h2
             id="faq"
-            className="text-[#d7cfeb] text-[128px] font-bold text-center mb-16 font-amatic"
+            className="text-[#d7cfeb] text-[128px] font-bold text-center mb-16 font-ember-and-fire"
             style={{ 
               textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
             }}
@@ -483,7 +483,7 @@ function App() {
               
               <div className="relative z-10 flex flex-col gap-10 items-center lg:px-16 pt-8 w-[90%] lg:w-[608px]">
                 <p 
-                  className="text-[#d7cfeb] text-6xl font-bold text-center mb-4 font-amatic"
+                  className="text-[#d7cfeb] text-6xl font-bold text-center mb-4 font-ember-and-fire"
                   style={{ 
                     textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
                   }}
@@ -494,7 +494,7 @@ function App() {
                 <FaqQuestion question="What is a game jam?">
                   A game jam is an event where you build a game from scratch in a short time period! It's all about creativity, teamwork, and having fun while learning new skills.
                 </FaqQuestion>
-                <FaqQuestion question="Am I Eligible?">
+                <FaqQuestion question="Am I eligible?">
                   If you're a high schooler (or younger), you're eligible! No prior experience required - just bring your enthusiasm and willingness to learn.
                 </FaqQuestion>
                 <FaqQuestion question="But I've never hacked before!">
@@ -519,7 +519,7 @@ function App() {
               
               <div className="relative z-10 flex flex-col gap-10 items-center px-16 pt-9 w-full lg:w-[608px]">
                 <p 
-                  className="text-[#d7cfeb] text-6xl font-bold text-center mb-4 font-amatic"
+                  className="text-[#d7cfeb] text-6xl font-bold text-center mb-4 font-ember-and-fire"
                   style={{ 
                     textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
                   }}
@@ -558,7 +558,7 @@ function App() {
 
         <div className="relative w-full h-[190px] bg-[#0f371d] -mt-3 flex flex-col items-center justify-center gap-6 z-10">
           <p 
-            className="text-white text-4xl lg:text-5xl text-center font-bold font-amatic"
+            className="text-white text-4xl lg:text-5xl text-center font-bold font-ember-and-fire"
             style={{ 
               textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
             }}
@@ -566,7 +566,7 @@ function App() {
             made with ♥ by Hack Club teens
           </p>
 
-          <div className="flex items-center gap-4 text-white text-2xl lg:text-3xl font-amatic font-bold z-20">
+          <div className="flex items-center gap-4 text-white text-2xl lg:text-3xl font-ember-and-fire font-bold z-20">
             <a href="https://hackclub.com/" target="_blank" className="hover:underline">Hack Club</a>
             <span>•</span>
             <a href="https://hackclub.com/slack" target="_blank" className="hover:underline">Slack</a>

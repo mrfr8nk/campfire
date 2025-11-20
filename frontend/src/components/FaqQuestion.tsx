@@ -14,9 +14,9 @@ function FaqQuestion({ question, children }: FaqQuestionProps) {
 
   return (
     <div className="w-full lg:w-[467px] cursor-pointer" onClick={toggleExpanded}>
-      <div className="bg-[#8d3f34] shadow-[8px_8px_0px_0px_#733a32] flex flex-col items-center justify-center px-12 py-8 lg:py-0 lg:h-[168px] transition-all duration-200 hover:scale-105">
+      <div className="bg-[#8d3f34] shadow-[8px_8px_0px_0px_#733a32] flex flex-col items-center justify-center px-12 py-8 lg:py-16 transition-all duration-200 hover:scale-105">
         <p 
-          className="text-white text-5xl text-center font-bold leading-none w-full font-amatic"
+          className="text-white text-4xl text-center font-bold leading-none w-full font-ember-and-fire"
         >
           {question}
         </p>
@@ -28,7 +28,7 @@ function FaqQuestion({ question, children }: FaqQuestionProps) {
         }`}
       >
         <div className="bg-[#6b2f26] shadow-[8px_8px_0px_0px_#5a251e] px-12 py-8 -mt-2">
-          <p className="text-white text-3xl leading-relaxed font-amatic font-bold">
+          <p className="text-white text-2xl leading-relaxed font-ember-and-fire font-bold">
             {children}
           </p>
         </div>

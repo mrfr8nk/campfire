@@ -39,11 +39,11 @@ function StoryCard({ imageSrc, imageAlt, titleImageSrc, titleImageAlt, descripti
       </div>
 
       <button
-        className="absolute bottom-0 cursor-pointer block rounded-2xl p-4 px-6 font-amatic text-white font-bold text-5xl transition-transform hover:scale-105 active:scale-95 translate-y-6 shadow"
+        className="absolute bottom-0 cursor-pointer block rounded-2xl p-4 px-6 font-ember-and-fire text-white font-bold text-4xl transition-transform hover:scale-105 active:scale-95 translate-y-6 shadow"
         onClick={() => window.open(videoUrl, "_blank")}
         style={{ background: btnBg }}
       >
-        {videoButtonText}
+        {videoButtonText.toUpperCase()}
       </button>
     </div>
   );

@@ -9,6 +9,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Ember & Fire';
+  src: url('/fonts/ember-and-fire.woff2') format('woff2'),
+       url('/fonts/ember-and-fire.woff') format('woff')
+       url('/fonts/ember-and-fire.ttf') format('ttf');
+  font-weight: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -27,6 +36,7 @@ html, body, #root {
 
 @theme {
   --font-amatic: 'Amatic SC', sans-serif;
+  --font-ember-and-fire: 'Ember & Fire', sans-serif;
   --font-national-park: 'National Park', sans-serif;
   --font-solway: 'Solway', serif;
   --font-dream-planner: 'DREAM PLANNER', Impact, 'Arial Black', sans-serif;
