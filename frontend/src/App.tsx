@@ -7,6 +7,9 @@ import NavbarLink from './components/NavbarLink.tsx';
 import { useEffect, useRef, useState } from 'react';
 import clsx from 'clsx';
 
+const FORM_URL_ORGANIZER_APPLICATION = "https://forms.hackclub.com/campfiring";
+const FORM_URL_RSVP = "https://forms.hackclub.com/t/a3QSt8MuvHus";
+
 function App() {
   const [email, setEmail] = useState("");
   const [scrollY, setScrollY] = useState(document.body.scrollTop);
@@ -163,7 +166,7 @@ function App() {
                   <button 
                     className="bg-[#fca147] border-[5px] border-[rgba(0,0,0,0.2)] rounded-[20px] px-8 md:px-14 py-4 hover:scale-105 transition-transform w-full md:w-auto transform md:rotate-[1.5deg] shadow-[0_8px_20px_rgba(0,0,0,0.25)] cursor-pointer active:scale-95"
                     type="button"
-                    onClick={() => openWithEmail("https://forms.hackclub.com/campfiring")}
+                    onClick={() => openWithEmail(FORM_URL_ORGANIZER_APPLICATION)}
                   >
                     <p 
                       className="text-[#8d3f34] text-3xl md:text-5xl font-normal font-dream-planner"
@@ -178,7 +181,7 @@ function App() {
                 }}>
                   ...or <span
                     className='underline inline-block cursor-pointer transition-transform hover:scale-105 active:scale-95'
-                    onClick={() => openWithEmail("https://forms.hackclub.com/t/a3QSt8MuvHus")}
+                    onClick={() => openWithEmail(FORM_URL_RSVP)}
                   >
                     RSVP
                   </span> for one
@@ -584,7 +587,7 @@ function App() {
                 <FaqQuestion question="Can I join an organizing team?">
                   Of course! Many cities have organizing teams. Reach out to organizers in your area or apply to join an existing team.
                 </FaqQuestion>
-                <FaqButton content="Apply to be an organizer" />
+                <FaqButton href={FORM_URL_ORGANIZER_APPLICATION} content="Apply to be an organizer" />
               </div>
             </div>
           </div>
