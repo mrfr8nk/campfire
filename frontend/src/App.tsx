@@ -54,7 +54,8 @@ function App() {
             <NavbarLink onClick={() => scrollToSection('steps')}>How to organize</NavbarLink>
             {/* <NavbarLink onClick={() => scrollToSection('map')}>Map</NavbarLink> */}
             {/* <NavbarLink onClick={() => scrollToSection('letter')}>Letter</NavbarLink> */}
-            <NavbarLink onClick={() => scrollToSection('previous-events')}>Previous events</NavbarLink>
+            <NavbarLink onClick={() => scrollToSection('previous-events')}>Past events</NavbarLink>
+            <NavbarLink onClick={() => scrollToSection('games-made')}>Games made</NavbarLink>
             <NavbarLink onClick={() => scrollToSection('faq')}>FAQ</NavbarLink>
           </nav>
         </header>
@@ -443,7 +444,8 @@ function App() {
 
       <section className="bg-[#384fbc] pt-[40vw] md:pt-[25vw] z-10">
         <div className="flex flex-col gap-8 items-center px-8 max-w-7xl mx-auto pb-16">
-          <h2 
+          <h2
+            id="games-made"
             className="text-[#f1ebff] text-6xl font-bold text-center mb-8 font-ember-and-fire"
             style={{ 
               textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
