@@ -42,7 +42,7 @@ function App() {
     <div className="w-full min-h-screen flex flex-col overflow-x-hidden">
       <div className="absolute top-0 left-0 w-1/3 md:z-40 pointer-events-none">
         <img 
-          src="/backgrounds/corner-cloud.png" 
+          src="/compressed/backgrounds/corner-cloud.webp" 
           alt=""
           className="w-full h-full object-cover select-none"
         />
@@ -73,12 +73,12 @@ function App() {
           >
             {/* fishy on the right. His name is frederick. */}
             <div className="absolute top-[128px] md:top-[96px] right-[-50px] md:right-[100px] w-1/3 md:w-1/6">
-              <img src="/characters/fish-2.png" alt="Fish named Frederick" className="w-full h-full object-cover select-none" />
+              <img src="/compressed/characters/fish-2.webp" alt="Fish named Frederick" className="w-full h-full object-cover select-none" />
             </div>
 
             {/* fishy on the left. His name is gubson */}
             <div className="absolute top-[96px] md:top-[60px] right-[-10px] md:right-[300px] w-1/3 md:w-1/6">
-              <img src="/characters/fish-1.png" alt="Fish named Gubson" className="w-full h-full object-cover select-none" />
+              <img src="/compressed/characters/fish-1.webp" alt="Fish named Gubson" className="w-full h-full object-cover select-none" />
             </div>
           </div>
 
@@ -107,7 +107,7 @@ function App() {
                 <div className="flex items-center gap-2 mb-4">
                   <a href='https://hackclub.com' className='transition-transform hover:scale-105 active:scale-95'>
                     <img 
-                      src="/decorative/hack-club-flag.png" 
+                      src="/compressed/decorative/hack-club-flag.webp" 
                       alt="Hack Club" 
                       className="w-[151px] h-[53px] object-cover transform rotate-[-4.8deg] select-none"
                     />
@@ -204,7 +204,7 @@ function App() {
                 </p>
 
                 <img 
-                  src="/ui/arrow.png" 
+                  src="/compressed/ui/arrow.webp" 
                   alt="" 
                   className="w-[45px] md:w-[55px] h-[33px] md:h-[41px] translate-y-6 rotate-[6.2deg] z-50 select-none"
                 />
@@ -229,7 +229,7 @@ function App() {
 
         <div className="absolute bottom-0 left-0 w-full pointer-events-none">
           <img
-            src="/backgrounds/landing-grass.png"
+            src="/compressed/backgrounds/landing-grass.webp"
             alt=""
             className="w-full h-full object-cover select-none"
             style={{
@@ -255,7 +255,7 @@ function App() {
         
         <div className="absolute bottom-[200px] left-32 w-[569px] h-[676px] pointer-events-none">
           <img 
-            src="/characters/astronaut.png" 
+            src="/compressed/characters/astronaut.webp" 
             alt="" 
             className="w-full h-full object-cover transform rotate-[172deg] scale-y-[-1] select-none"
           />
@@ -263,27 +263,27 @@ function App() {
         
         <div className="absolute top-[0px] z-45 right-0 w-[150px] md:w-[352px] pointer-events-none">
           <img
-            src="/decorative/cogs-top-right.png" alt=""
+            src="/compressed/decorative/cogs-top-right.webp" alt=""
             className="w-full h-full object-contain select-none"
           />
         </div>
 
         <div className="absolute invisible md:visible top-[55%] z-45 left-0 w-[260px] pointer-events-none">
-          <img src="/decorative/cogs-mid-left.png" alt="" className="w-full h-full object-contain select-none" />
+          <img src="/compressed/decorative/cogs-mid-left.webp" alt="" className="w-full h-full object-contain select-none" />
         </div>
         
         <div className="absolute invisible md:visible top-[75%] z-45 right-0 translate-x-20 w-[280px] pointer-events-none">
-          <img src="/decorative/single-cog-1.png" alt="" className="w-full h-full object-contain select-none" />
+          <img src="/compressed/decorative/single-cog-1.webp" alt="" className="w-full h-full object-contain select-none" />
         </div>
 
         <div className="absolute invisible md:visible top-[82%] z-45 left-0 translate-x-10 w-[280px] pointer-events-none">
-          <img src="/decorative/single-cog-2.png" alt="" className="w-full h-full object-contain select-none" />
+          <img src="/compressed/decorative/single-cog-2.webp" alt="" className="w-full h-full object-contain select-none" />
         </div>
 
         <div id="steps" className="relative z-40 flex flex-col gap-24 items-center px-12 max-w-7xl mx-auto pt-12 md:pt-0">
           <Step 
             stepNumber={1}
-            imageSrc="/ui/step-signup.jpeg"
+            imageSrc="/compressed/ui/step-signup.webp"
             imageAlt="Step 1"
           >
             Find a team of <br></br><span className="font-bold text-[#F77034]">CO-ORGANIZERS</span>
@@ -291,7 +291,7 @@ function App() {
 
           <Step 
             stepNumber={2}
-            imageSrc="/ui/step-team.jpeg"
+            imageSrc="/compressed/ui/step-team.webp"
             imageAlt="Step 2"
             isReversed={true}
           >
@@ -300,7 +300,7 @@ function App() {
 
           <Step 
             stepNumber={3}
-            imageSrc="/ui/step-workshops.jpeg"
+            imageSrc="/compressed/ui/step-workshops.webp"
             imageAlt="Step 3"
           >
             Find <span className="text-[#F77034] font-bold">SPONSORS</span> to buy merch and prizes, and make your event <span className="text-[#F77034] font-bold">SPECIAL!</span>
@@ -308,7 +308,7 @@ function App() {
 
           <Step 
             stepNumber={4}
-            imageSrc="/ui/step-build.jpeg"
+            imageSrc="/compressed/ui/step-build.webp"
             imageAlt="Step 4"
             isReversed={true}
           >
@@ -338,7 +338,7 @@ function App() {
         </div>
 
         <div id="letter" className="relative w-full h-full z-50 translate-y-20 md:translate-y-64 flex justify-center">
-          <img src='/backgrounds/world-map-left.png' alt='' className='h-full hidden md:block' />
+          <img src='/compressed/backgrounds/world-map-left.webp' alt='' className='h-full hidden md:block' />
           <div className='flex items-center md:block md:relative'>
             <img src='/backgrounds/world-map-right.webp' alt='' className='h-full hidden md:block' />
             <div className='md:absolute md:top-0 md:left-0 py-12 md:py-16 md:pb-0 rounded-xl shadow-[0_8px_20px_rgba(0,0,0,0.25)] md:rounded-none md:shadow-none md:pt-30 pl-6 md:pl-12 pr-6 md:pr-64 text-xl bg-[#EAD6BE] border-[#DCA87E] border-4 md:border-0 md:bg-transparent flex flex-col gap-6 font-solway'>
@@ -416,7 +416,7 @@ function App() {
             <StoryCard 
               imageSrc="/stories/counterspell.webp"
               imageAlt=""
-              titleImageSrc="/branding/logo-counterspell.png"
+              titleImageSrc="/compressed/branding/logo-counterspell.webp"
               titleImageAlt="Counterspell logo"
               description="Our first worldwide game jam! In 50 cities including Toronto, Boston, & Singapore"
               videoButtonText='Watch the video'
@@ -438,9 +438,9 @@ function App() {
             />
 
             <StoryCard 
-              imageSrc="/stories/daydream.jpg"
+              imageSrc="/compressed/stories/daydream.webp"
               imageAlt=""
-              titleImageSrc="/branding/logo-daydream.png"
+              titleImageSrc="/compressed/branding/logo-daydream.webp"
               titleImageAlt="Daydream logo"
               description="Game jam in 100 cities worldwide -- from London to NYC to Penang!"
               videoButtonText='Video here!'
@@ -515,7 +515,7 @@ function App() {
       <section className="relative pb-64 bg-[#384FBC] md:bg-[#081F8B]">
         <div className="absolute w-full h-full z-10 pointer-events-none invisible md:visible">
           <img 
-            src="/decorative/speech-bubble-bg.png" 
+            src="/compressed/decorative/speech-bubble-bg.webp" 
             alt=""
             className="w-full h-full select-none pointer-events-none"
           />

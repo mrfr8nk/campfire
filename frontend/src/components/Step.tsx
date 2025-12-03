@@ -11,7 +11,7 @@ function Step({ stepNumber, imageSrc, imageAlt, isReversed = false, children }: 
       <div className={`relative flex flex-col text-[#000] flex-1 ${isReversed ? 'md:items-start' : 'md:items-end md:text-right'}`}>
         <div className="absolute -inset-12 md:-inset-16 -z-60 pointer-events-none">
           <img 
-            src="/ui/step-bg.png" 
+            src="/compressed/ui/step-bg.webp" 
             alt="" 
             className="w-min h-full object-cover select-none translate-y-2 md:translate-y-0"
           />
