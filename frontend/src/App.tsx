@@ -151,7 +151,7 @@ function App() {
                       textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
                     }}
                   >
-                    Feb 7-8, 2026
+                    Feb 28 - Mar 1, 2026
                   </p>
                 </div>
               </div>
