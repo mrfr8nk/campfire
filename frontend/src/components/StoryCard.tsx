@@ -10,7 +10,7 @@ function StoryCard({ imageSrc, imageAlt, titleImageSrc, titleImageAlt, descripti
   eventUrl: string;
 }) {
   return (
-    <div className="bg-[url(ui/step-bg.png)] bg-no-repeat bg-cover min-[1050px]:bg-none min-[1050px]:bg-white relative p-6 pb-24 flex items-center flex-1 basis-0 flex-col gap-4 min-[1050px]:gap-2 min-[1050px]:shadow-[16px_16px_0px_0px_rgba(0,0,0,0.3)] mx-8 min-[1050px]:mx-0">
+    <div className="bg-[url(compressed/ui/step-bg.webp)] bg-no-repeat bg-cover min-[1050px]:bg-none min-[1050px]:bg-white relative p-6 pb-24 flex items-center flex-1 basis-0 flex-col gap-4 min-[1050px]:gap-2 min-[1050px]:shadow-[16px_16px_0px_0px_rgba(0,0,0,0.3)] mx-8 min-[1050px]:mx-0">
       <img 
         src={imageSrc}
         alt={imageAlt}
