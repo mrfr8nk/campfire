@@ -57,7 +57,7 @@ function App() {
 
   useEffect(() => {
     if (window.location.pathname === '/flagship') {
-      window.location.href = 'https://flagship.campfire.hackclub.com';
+      window.location.href = 'https://flagship.hackclub.com?utm_source=campfire_landing_page';
       return;
     }
 
