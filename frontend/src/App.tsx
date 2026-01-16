@@ -15,9 +15,9 @@ function FlagshipCTA({ className, compact, maxWidth }: { className?: string; com
   return (
     <div className={className}>
       <a
-        href="https://flagship.campfire.hackclub.com/"
+        href="https://flagship.hackclub.com?utm_source=campfire-website"
         target="_blank"
-        rel="noopener noreferrer"
+        rel="noopener"
         className={clsx(
           "flex items-center rounded-[20px] transition-transform hover:scale-105 active:scale-95 cursor-pointer",
           compact ? "gap-4 px-6 py-3" : "gap-8 px-8 py-4",
