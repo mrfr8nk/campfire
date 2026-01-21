@@ -4,7 +4,7 @@
     "hero": {
       "campfire": "CAMPFIRE",
       "subtitle": "Game jam for high schoolers in 200+ cities",
-      "hostedAt": "Hosted @ {venue}",
+      "hostedAt": "Hosted @ ",
       "emailPlaceholder": "you@hackclub.com",
       "ctaPrimary": "SIGN UP!",
       "ctaSecondary": "flagship event",
