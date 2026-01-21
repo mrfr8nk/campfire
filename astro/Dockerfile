@@ -5,12 +5,13 @@ WORKDIR /app
 COPY package*.json ./
 COPY prisma ./prisma
 RUN npm ci
+RUN npx prisma generate
 
 FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
+COPY --from=deps /app/src/generated/prisma ./src/generated/prisma
 COPY . .
-RUN npx prisma generate
 RUN npm run build
 
 FROM base AS runner
