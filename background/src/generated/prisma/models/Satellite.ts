@@ -39,6 +39,8 @@ export type SatelliteMinAggregateOutputType = {
   recordId: string | null
   slug: string | null
   redirect: string | null
+  signupUrl: string | null
+  webSignupOverride: string | null
   active: boolean | null
   createdAt: Date | null
   updatedAt: Date | null
@@ -49,6 +51,8 @@ export type SatelliteMaxAggregateOutputType = {
   recordId: string | null
   slug: string | null
   redirect: string | null
+  signupUrl: string | null
+  webSignupOverride: string | null
   active: boolean | null
   createdAt: Date | null
   updatedAt: Date | null
@@ -59,6 +63,8 @@ export type SatelliteCountAggregateOutputType = {
   recordId: number
   slug: number
   redirect: number
+  signupUrl: number
+  webSignupOverride: number
   data: number
   active: number
   createdAt: number
@@ -80,6 +86,8 @@ export type SatelliteMinAggregateInputType = {
   recordId?: true
   slug?: true
   redirect?: true
+  signupUrl?: true
+  webSignupOverride?: true
   active?: true
   createdAt?: true
   updatedAt?: true
@@ -90,6 +98,8 @@ export type SatelliteMaxAggregateInputType = {
   recordId?: true
   slug?: true
   redirect?: true
+  signupUrl?: true
+  webSignupOverride?: true
   active?: true
   createdAt?: true
   updatedAt?: true
@@ -100,6 +110,8 @@ export type SatelliteCountAggregateInputType = {
   recordId?: true
   slug?: true
   redirect?: true
+  signupUrl?: true
+  webSignupOverride?: true
   data?: true
   active?: true
   createdAt?: true
@@ -198,6 +210,8 @@ export type SatelliteGroupByOutputType = {
   recordId: string
   slug: string
   redirect: string | null
+  signupUrl: string | null
+  webSignupOverride: string | null
   data: runtime.JsonValue
   active: boolean
   createdAt: Date
@@ -232,6 +246,8 @@ export type SatelliteWhereInput = {
   recordId?: Prisma.StringFilter<"Satellite"> | string
   slug?: Prisma.StringFilter<"Satellite"> | string
   redirect?: Prisma.StringNullableFilter<"Satellite"> | string | null
+  signupUrl?: Prisma.StringNullableFilter<"Satellite"> | string | null
+  webSignupOverride?: Prisma.StringNullableFilter<"Satellite"> | string | null
   data?: Prisma.JsonFilter<"Satellite">
   active?: Prisma.BoolFilter<"Satellite"> | boolean
   createdAt?: Prisma.DateTimeFilter<"Satellite"> | Date | string
@@ -243,6 +259,8 @@ export type SatelliteOrderByWithRelationInput = {
   recordId?: Prisma.SortOrder
   slug?: Prisma.SortOrder
   redirect?: Prisma.SortOrderInput | Prisma.SortOrder
+  signupUrl?: Prisma.SortOrderInput | Prisma.SortOrder
+  webSignupOverride?: Prisma.SortOrderInput | Prisma.SortOrder
   data?: Prisma.SortOrder
   active?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -257,6 +275,8 @@ export type SatelliteWhereUniqueInput = Prisma.AtLeast<{
   OR?: Prisma.SatelliteWhereInput[]
   NOT?: Prisma.SatelliteWhereInput | Prisma.SatelliteWhereInput[]
   redirect?: Prisma.StringNullableFilter<"Satellite"> | string | null
+  signupUrl?: Prisma.StringNullableFilter<"Satellite"> | string | null
+  webSignupOverride?: Prisma.StringNullableFilter<"Satellite"> | string | null
   data?: Prisma.JsonFilter<"Satellite">
   active?: Prisma.BoolFilter<"Satellite"> | boolean
   createdAt?: Prisma.DateTimeFilter<"Satellite"> | Date | string
@@ -268,6 +288,8 @@ export type SatelliteOrderByWithAggregationInput = {
   recordId?: Prisma.SortOrder
   slug?: Prisma.SortOrder
   redirect?: Prisma.SortOrderInput | Prisma.SortOrder
+  signupUrl?: Prisma.SortOrderInput | Prisma.SortOrder
+  webSignupOverride?: Prisma.SortOrderInput | Prisma.SortOrder
   data?: Prisma.SortOrder
   active?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -287,6 +309,8 @@ export type SatelliteScalarWhereWithAggregatesInput = {
   recordId?: Prisma.StringWithAggregatesFilter<"Satellite"> | string
   slug?: Prisma.StringWithAggregatesFilter<"Satellite"> | string
   redirect?: Prisma.StringNullableWithAggregatesFilter<"Satellite"> | string | null
+  signupUrl?: Prisma.StringNullableWithAggregatesFilter<"Satellite"> | string | null
+  webSignupOverride?: Prisma.StringNullableWithAggregatesFilter<"Satellite"> | string | null
   data?: Prisma.JsonWithAggregatesFilter<"Satellite">
   active?: Prisma.BoolWithAggregatesFilter<"Satellite"> | boolean
   createdAt?: Prisma.DateTimeWithAggregatesFilter<"Satellite"> | Date | string
@@ -297,6 +321,8 @@ export type SatelliteCreateInput = {
   recordId: string
   slug: string
   redirect?: string | null
+  signupUrl?: string | null
+  webSignupOverride?: string | null
   data: Prisma.JsonNullValueInput | runtime.InputJsonValue
   active?: boolean
   createdAt?: Date | string
@@ -308,6 +334,8 @@ export type SatelliteUncheckedCreateInput = {
   recordId: string
   slug: string
   redirect?: string | null
+  signupUrl?: string | null
+  webSignupOverride?: string | null
   data: Prisma.JsonNullValueInput | runtime.InputJsonValue
   active?: boolean
   createdAt?: Date | string
@@ -318,6 +346,8 @@ export type SatelliteUpdateInput = {
   recordId?: Prisma.StringFieldUpdateOperationsInput | string
   slug?: Prisma.StringFieldUpdateOperationsInput | string
   redirect?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  signupUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  webSignupOverride?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   data?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   active?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -329,6 +359,8 @@ export type SatelliteUncheckedUpdateInput = {
   recordId?: Prisma.StringFieldUpdateOperationsInput | string
   slug?: Prisma.StringFieldUpdateOperationsInput | string
   redirect?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  signupUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  webSignupOverride?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   data?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   active?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -340,6 +372,8 @@ export type SatelliteCreateManyInput = {
   recordId: string
   slug: string
   redirect?: string | null
+  signupUrl?: string | null
+  webSignupOverride?: string | null
   data: Prisma.JsonNullValueInput | runtime.InputJsonValue
   active?: boolean
   createdAt?: Date | string
@@ -350,6 +384,8 @@ export type SatelliteUpdateManyMutationInput = {
   recordId?: Prisma.StringFieldUpdateOperationsInput | string
   slug?: Prisma.StringFieldUpdateOperationsInput | string
   redirect?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  signupUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  webSignupOverride?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   data?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   active?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -361,6 +397,8 @@ export type SatelliteUncheckedUpdateManyInput = {
   recordId?: Prisma.StringFieldUpdateOperationsInput | string
   slug?: Prisma.StringFieldUpdateOperationsInput | string
   redirect?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  signupUrl?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
+  webSignupOverride?: Prisma.NullableStringFieldUpdateOperationsInput | string | null
   data?: Prisma.JsonNullValueInput | runtime.InputJsonValue
   active?: Prisma.BoolFieldUpdateOperationsInput | boolean
   createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string
@@ -372,6 +410,8 @@ export type SatelliteCountOrderByAggregateInput = {
   recordId?: Prisma.SortOrder
   slug?: Prisma.SortOrder
   redirect?: Prisma.SortOrder
+  signupUrl?: Prisma.SortOrder
+  webSignupOverride?: Prisma.SortOrder
   data?: Prisma.SortOrder
   active?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
@@ -387,6 +427,8 @@ export type SatelliteMaxOrderByAggregateInput = {
   recordId?: Prisma.SortOrder
   slug?: Prisma.SortOrder
   redirect?: Prisma.SortOrder
+  signupUrl?: Prisma.SortOrder
+  webSignupOverride?: Prisma.SortOrder
   active?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
@@ -397,6 +439,8 @@ export type SatelliteMinOrderByAggregateInput = {
   recordId?: Prisma.SortOrder
   slug?: Prisma.SortOrder
   redirect?: Prisma.SortOrder
+  signupUrl?: Prisma.SortOrder
+  webSignupOverride?: Prisma.SortOrder
   active?: Prisma.SortOrder
   createdAt?: Prisma.SortOrder
   updatedAt?: Prisma.SortOrder
@@ -437,6 +481,8 @@ export type SatelliteSelect<ExtArgs extends runtime.Types.Extensions.InternalArg
   recordId?: boolean
   slug?: boolean
   redirect?: boolean
+  signupUrl?: boolean
+  webSignupOverride?: boolean
   data?: boolean
   active?: boolean
   createdAt?: boolean
@@ -448,6 +494,8 @@ export type SatelliteSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Ext
   recordId?: boolean
   slug?: boolean
   redirect?: boolean
+  signupUrl?: boolean
+  webSignupOverride?: boolean
   data?: boolean
   active?: boolean
   createdAt?: boolean
@@ -459,6 +507,8 @@ export type SatelliteSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Ext
   recordId?: boolean
   slug?: boolean
   redirect?: boolean
+  signupUrl?: boolean
+  webSignupOverride?: boolean
   data?: boolean
   active?: boolean
   createdAt?: boolean
@@ -470,13 +520,15 @@ export type SatelliteSelectScalar = {
   recordId?: boolean
   slug?: boolean
   redirect?: boolean
+  signupUrl?: boolean
+  webSignupOverride?: boolean
   data?: boolean
   active?: boolean
   createdAt?: boolean
   updatedAt?: boolean
 }
 
-export type SatelliteOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "recordId" | "slug" | "redirect" | "data" | "active" | "createdAt" | "updatedAt", ExtArgs["result"]["satellite"]>
+export type SatelliteOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "recordId" | "slug" | "redirect" | "signupUrl" | "webSignupOverride" | "data" | "active" | "createdAt" | "updatedAt", ExtArgs["result"]["satellite"]>
 
 export type $SatellitePayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
   name: "Satellite"
@@ -486,6 +538,8 @@ export type $SatellitePayload<ExtArgs extends runtime.Types.Extensions.InternalA
     recordId: string
     slug: string
     redirect: string | null
+    signupUrl: string | null
+    webSignupOverride: string | null
     data: runtime.JsonValue
     active: boolean
     createdAt: Date
@@ -917,6 +971,8 @@ export interface SatelliteFieldRefs {
   readonly recordId: Prisma.FieldRef<"Satellite", 'String'>
   readonly slug: Prisma.FieldRef<"Satellite", 'String'>
   readonly redirect: Prisma.FieldRef<"Satellite", 'String'>
+  readonly signupUrl: Prisma.FieldRef<"Satellite", 'String'>
+  readonly webSignupOverride: Prisma.FieldRef<"Satellite", 'String'>
   readonly data: Prisma.FieldRef<"Satellite", 'Json'>
   readonly active: Prisma.FieldRef<"Satellite", 'Boolean'>
   readonly createdAt: Prisma.FieldRef<"Satellite", 'DateTime'>

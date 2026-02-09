@@ -75,6 +75,8 @@ export const SatelliteScalarFieldEnum = {
   recordId: 'recordId',
   slug: 'slug',
   redirect: 'redirect',
+  signupUrl: 'signupUrl',
+  webSignupOverride: 'webSignupOverride',
   data: 'data',
   active: 'active',
   createdAt: 'createdAt',

@@ -20,6 +20,8 @@ export async function listOfEventWebsiteData() {
             'website_json', //string
             'website_redirect', //string
             'website_active', //boolean
+            'signup_url', //string
+			'web_signup_override', //string
             'Status', // 'Canceled' | 'Active'
         ]
     }).all())
@@ -42,6 +44,8 @@ function parseRecord(record: Airtable.Record<Airtable.FieldSet>) {
     const websiteJson = record.get('website_json') as string;
     const websiteActive = record.get('website_active') === true;
     const websiteRedirect = record.get('website_redirect') as string;
+    const signupUrl = record.get('signup_url') as string | undefined;
+    const webSignupOverride = record.get('web_signup_override') as string | undefined;
     const status = record.get('Status') as string;
 
     if (!slug) {
@@ -73,7 +77,7 @@ function parseRecord(record: Airtable.Record<Airtable.FieldSet>) {
         data.cancelled = true;
     }
 
-    return { recordId: record.id, slug, data, active: websiteActive, redirect: websiteRedirect };
+    return { recordId: record.id, slug, data, active: websiteActive, redirect: websiteRedirect, signupUrl: signupUrl ?? null, webSignupOverride: webSignupOverride ?? null };
 }
 
 class AirtableSyncWorker {
@@ -156,6 +160,8 @@ class AirtableSyncWorker {
                                 data: data.data,
                                 active: data.active,
                                 redirect: data.redirect,
+                                signupUrl: data.signupUrl,
+                                webSignupOverride: data.webSignupOverride,
                                 updatedAt: new Date(),
                             },
                         })

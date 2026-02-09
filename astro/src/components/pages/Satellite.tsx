@@ -31,7 +31,8 @@ const FORM_URL_ORGANIZER_APPLICATION = "https://forms.hackclub.com/t/8L51MzWyrHu
 const FORM_URL_RSVP = "https://forms.hackclub.com/t/a3QSt8MuvHus";
 const FORM_URL_SIGN_UP = "https://forms.hackclub.com/campfire-signup";
 
-function App({slug, content, record_id}: {slug: string | undefined, content: SatelliteContent, record_id: string | undefined}) {
+function App({slug, content, record_id, signupUrl, webSignupOverride}: {slug: string | undefined, content: SatelliteContent, record_id: string | undefined, signupUrl?: string | null, webSignupOverride?: string | null}) {
+  const effectiveSignupUrl = webSignupOverride || signupUrl || FORM_URL_SIGN_UP;
   const [email, setEmail] = useState("");
   const [scrollY, setScrollY] = useState(document.body.scrollTop);
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1280);
@@ -218,14 +219,14 @@ function App({slug, content, record_id}: {slug: string | undefined, content: Sat
                       value={email}
                       onChange={e => setEmail(e.target.value)}
                       placeholder={content.localization.hero.emailPlaceholder}
-                      onSubmit={() => handleOpenWithEmail(FORM_URL_SIGN_UP)}
+                      onSubmit={() => handleOpenWithEmail(effectiveSignupUrl)}
                     />
                   </div>
 
                   <button 
                     className="bg-[#fca147] border-[5px] border-[rgba(0,0,0,0.2)] rounded-[20px] px-8 md:px-14 py-4 hover:scale-105 transition-transform w-full md:w-auto transform md:rotate-[1.5deg] shadow-[0_8px_20px_rgba(0,0,0,0.25)] cursor-pointer active:scale-95"
                     type="button"
-                    onClick={() => handleOpenWithEmail(FORM_URL_SIGN_UP)}
+                    onClick={() => handleOpenWithEmail(effectiveSignupUrl)}
                   >
                     <p 
                       className="text-[#8d3f34] text-3xl md:text-5xl font-normal font-dream-planner whitespace-nowrap"
