@@ -548,7 +548,7 @@ function App({slug, content, record_id, signupUrl, webSignupOverride}: {slug: st
                     {q.answer}
                   </FaqQuestion>
                 ))}
-                <FaqButton content={content.event.faq.participant.buttonText} />
+                <FaqButton href={content.event.faq.participant.buttonLink} content={content.event.faq.participant.buttonText} />
               </div>
             </div>
 
@@ -575,7 +575,7 @@ function App({slug, content, record_id, signupUrl, webSignupOverride}: {slug: st
                       {q.answer}
                     </FaqQuestion>
                   ))}
-                  <FaqButton href={FORM_URL_ORGANIZER_APPLICATION} content={content.event.faq.organizer.buttonText} />
+                  <FaqButton href={content.event.faq.organizer.buttonLink ?? FORM_URL_ORGANIZER_APPLICATION} content={content.event.faq.organizer.buttonText} />
                 </div>
               </div>
             )}
