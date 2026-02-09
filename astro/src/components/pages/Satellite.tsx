@@ -313,6 +313,7 @@ function App({slug, content, record_id, signupUrl, webSignupOverride}: {slug: st
         <div id="steps" className="relative z-40 flex flex-col gap-24 items-center px-12 max-w-7xl mx-auto pt-12 md:pt-0">
           <Step
             stepNumber={1}
+            stepLabel={content.localization.steps.stepLabel ?? "Step"}
             imageSrc="/compressed/ui/step-signup.jpeg"
             imageAlt="Step 1"
           >
@@ -321,6 +322,7 @@ function App({slug, content, record_id, signupUrl, webSignupOverride}: {slug: st
 
           <Step
             stepNumber={2}
+            stepLabel={content.localization.steps.stepLabel ?? "Step"}
             imageSrc="/compressed/ui/step-team.webp"
             imageAlt="Step 2"
             isReversed={true}
@@ -330,6 +332,7 @@ function App({slug, content, record_id, signupUrl, webSignupOverride}: {slug: st
 
           <Step
             stepNumber={3}
+            stepLabel={content.localization.steps.stepLabel ?? "Step"}
             imageSrc="/compressed/ui/step-workshops.webp"
             imageAlt="Step 3"
           >
@@ -338,6 +341,7 @@ function App({slug, content, record_id, signupUrl, webSignupOverride}: {slug: st
 
           <Step
             stepNumber={4}
+            stepLabel={content.localization.steps.stepLabel ?? "Step"}
             imageSrc="/compressed/ui/step-build.webp"
             imageAlt="Step 4"
             isReversed={true}

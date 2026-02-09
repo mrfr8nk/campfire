@@ -19,6 +19,7 @@ export const SatelliteContentSchema = z.object({
         }),
         nav: z.record(z.string(), z.string()),
         steps: z.object({
+            stepLabel: z.string().optional(),
             step1: z.string(),
             step2: z.string(),
             step3: z.string(),

@@ -1,7 +1,8 @@
 import type { PropsWithChildren } from "react";
 
-function Step({ stepNumber, imageSrc, imageAlt, isReversed = false, children }: PropsWithChildren<{
+function Step({ stepNumber, stepLabel = "Step", imageSrc, imageAlt, isReversed = false, children }: PropsWithChildren<{
   stepNumber: number;
+  stepLabel?: string;
   imageSrc: string;
   imageAlt: string;
   isReversed?: boolean;
@@ -20,7 +21,7 @@ function Step({ stepNumber, imageSrc, imageAlt, isReversed = false, children }: 
         <p 
           className="text-3xl font-bold mb-2 font-source-serif-pro relative z-10"
         >
-          Step {stepNumber}
+          {stepLabel} {stepNumber}
         </p>
 
         <p 
