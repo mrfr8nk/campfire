@@ -679,7 +679,7 @@ function App() {
               textShadow: "0px 4px 4px rgba(0,0,0,0.25)"
             }}
           >
-            made with love by Hack Club & Open Sauce
+            made with love by Hack Club & Darrell
           </p>
 
           <div className="mt-8 flex flex-col md:flex-row gap-16 max-w-6xl mx-auto px-4">
